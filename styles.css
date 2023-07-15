@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
 header {
     background-image: linear-gradient(to top, #000000a2, #ffaeae80), url('/Asset/Images/sedan-vs-luxury-banner.jpeg');
     background-size: cover;
@@ -18,6 +23,12 @@ header {
 
 }
 
+.title {
+    font-size: 3rem;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 header p {
     text-align: center;
@@ -44,9 +55,7 @@ header h6 {
     margin-top: 6rem;
 }
 
-.inventory h1 {
-    font-size: 2rem;
-}
+
 
 /* CSS */
 .card {
@@ -174,4 +183,69 @@ header h6 {
 
 .custom-card:hover::before {
     opacity: 1;
+}
+
+#About {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 2em 3em;
+    background-image: url('/Asset/Images/about.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 2em;
+    margin-top: 5rem;
+
+
+}
+
+.AboutUS {
+    padding: 0 1em;
+    width: 50%;
+    height: 600px;
+    overflow-y: scroll;
+
+}
+
+.AboutUS::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.AboutUS::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.AboutUS::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.AboutUS {
+    scrollbar-width: thin;
+
+}
+
+
+.AboutUS::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.AboutUS::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+
+.AboutUS div {
+    background: rgba(255, 255, 255, 0.5);
+    /* Adjust the alpha value (0 to 1) to control opacity */
+    backdrop-filter: blur(10px);
+    /* Applies a blur effect to create the glass effect */
+    border-radius: 10px;
+    padding: 2em;
+    text-align: justify;
+    margin: 1rem;
 }

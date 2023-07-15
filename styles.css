@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Asset/Images/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 5em;
+
+}
+
+
+header p {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+#headerH1 {
+    font-size: 6rem;
+    color: rgb(255, 67, 67);
+    font-family: 'Tektur', cursive;
+    text-shadow: 2px 2px 4px rgba(110, 108, 108, 0.5);
+
+}

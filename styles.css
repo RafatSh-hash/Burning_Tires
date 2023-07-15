@@ -12,7 +12,8 @@ header {
     background-size: cover;
     background-position: center center;
     text-align: center;
-    padding: 5em;
+    padding: 6em 3rem;
+
 
 }
 
@@ -20,7 +21,8 @@ header {
 header p {
     text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 0 5rem;
 }
 
 header h6 {
@@ -31,7 +33,7 @@ header h6 {
 
 #headerH1 {
     font-size: 6rem;
-    color: rgb(255, 67, 67);
+    color: #ff4343;
     font-family: 'Tektur', cursive;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 

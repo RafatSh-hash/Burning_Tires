@@ -194,7 +194,7 @@ header h6 {
     background-image: url('/Asset/Images/about.png');
     background-size: cover;
     background-position: center center;
-    border-radius: 2em;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
     margin-top: 5rem;
 
 
@@ -249,4 +249,14 @@ header h6 {
     padding: 2em;
     text-align: justify;
     margin: 1rem;
+}
+
+/* message */
+.message_Container {
+    display: flex;
+    justify-content: center;
+}
+
+.card_Image {
+    width: 10px;
 }

@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Asset/Images/banner.jpg');
+    background-image: linear-gradient(to top, #000000a2, #ffaeae80), url('/Asset/Images/sedan-vs-luxury-banner.jpeg');
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -23,10 +23,16 @@ header p {
     font-size: 2em;
 }
 
+header h6 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
 #headerH1 {
     font-size: 6rem;
     color: rgb(255, 67, 67);
     font-family: 'Tektur', cursive;
-    text-shadow: 2px 2px 4px rgba(110, 108, 108, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 
 }

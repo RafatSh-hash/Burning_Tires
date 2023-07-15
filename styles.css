@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 header {
@@ -37,4 +38,77 @@ header h6 {
     font-family: 'Tektur', cursive;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 
+}
+
+.inventory {
+    margin-top: 6rem;
+}
+
+.inventory h1 {
+    font-size: 2rem;
+}
+
+/* CSS */
+.card {
+    width: 100%;
+    /* height: 200px; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay h2,
+.overlay p {
+    color: #fff;
+    text-align: center;
+}
+
+.card:hover .image {
+    transform: scale(1.1);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+#inventoryCards {
+    width: 90%;
+    margin: auto;
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* Three columns each with 300px width */
+    gap: 40px;
+    /* padding: 20px; */
 }

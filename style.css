@@ -4,3 +4,23 @@ body {
     padding: 0 0;
     font-family: 'Poppins', sans-serif;
 }
+
+
+btn1 {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+.btn1:hover {
+    background-image: linear-gradient(to left, #EF4444);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: none;
+}

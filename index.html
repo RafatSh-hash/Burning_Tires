@@ -23,8 +23,73 @@
     <title>Burning Tires</title>
 </head>
 
+
 <body>
-    <h1 class="text-red-500 text-4xl font-semibold">Burning Tires</h1>
+    <!-- Navigation -->
+    <nav class="flex justify-between py-3 px-5 items-center mb-10">
+        <div>
+            <h1 class="text-2xl">Burning Tires</h1>
+        </div>
+        <div>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">Inventory</a>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">Inventory</a>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">About Us</a>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">Contact Us</a>
+        </div>
+        <div>
+            <button class="btn1 hover:text-white hover:bg-red-500 rounded-sm px-3 py-2">Sign In</button>
+            <button>Join Us</button>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div>
+        <div class="uk-position-relative uk-visible-toggle uk-light h-[60vh]" tabindex="-1"
+            uk-slideshow="animation: push">
+
+            <ul class="uk-slideshow-items">
+                <li class="h-[60vh]">
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="./Asset/Images/lamborghiniBanner.jpg" alt="" uk-cover>
+
+
+                    </div>
+                    <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                        <h2 class="uk-margin-remove text-5xl">Center</h2>
+                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </li>
+                <li class="h-[60vh]">
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                        <img src="/Asset/Images/mclarenBanner.jpg" alt="" uk-cover>
+
+                    </div>
+                    <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                        <h2 class="uk-margin-remove text-5xl">Center</h2>
+                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </li>
+                <li class="h-[60vh]">
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                        <img src="./Asset/Images/MustangBanner.jpg" alt="" uk-cover>
+
+                    </div>
+                    <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                        <h2 class="uk-margin-remove text-5xl">Center</h2>
+                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slideshow-item="next"></a>
+
+        </div>
+    </div>
 </body>
 
 </html>

@@ -3,18 +3,25 @@ body {
     margin: 0 0;
     padding: 0 0;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(216, 215, 215);
+
 }
 
-
-btn1 {
-    background-color: white;
+.btn1 {
+    background: linear-gradient(55deg, red 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
     color: black;
-    transition: background-color 0.5s;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out
 }
 
 .btn1:hover {
-    background-image: linear-gradient(to left, #EF4444);
+
+    background-position: left;
+    color: white;
+
 }
+
 
 a {
     text-decoration: none;
@@ -37,17 +44,37 @@ a:hover {
     color: #333;
 }
 
+.animated-underline1 {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+}
+
 .animated-underline::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+
     left: 0;
     bottom: -10px;
     width: 0%;
     height: 5px;
     background-color: #333;
     animation: underlineAnimation 4s linear forwards;
-    /* Animation duration is 4 seconds, adjust as needed */
+
+}
+
+.animated-underline1::after {
+    content: '';
+    position: absolute;
+
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    height: 5px;
+    background-color: #333;
+    animation: underlineAnimation 4s linear forwards;
+
 }
 
 .underline-text {
@@ -55,6 +82,10 @@ a:hover {
 }
 
 .animated-underline::after {
+    animation-fill-mode: forwards;
+}
+
+.animated-underline1::after {
     animation-fill-mode: forwards;
 }
 
@@ -140,6 +171,16 @@ a:hover {
     padding: 5px 0;
 }
 
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 @media screen and (min-width: 768px) {
     .gallery-item {
         width: 50%;
@@ -159,6 +200,23 @@ a:hover {
 
     100% {
         width: 32%;
+        border-radius: 5px;
+    }
+}
+
+@keyframes underlineAnimation1 {
+    0% {
+        width: 0%;
+        border-radius: 10px;
+    }
+
+    80% {
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    100% {
+        width: 50%;
         border-radius: 5px;
     }
 }

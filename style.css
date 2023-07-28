@@ -24,3 +24,72 @@ a:hover {
 
     text-decoration: none;
 }
+
+/* .underline-container {
+    position: relative;
+    display: inline-block;
+} */
+
+.animated-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    height: 5px;
+    background-color: #333;
+    animation: underlineAnimation 4s linear forwards;
+    /* Animation duration is 4 seconds, adjust as needed */
+}
+
+.underline-text {
+    color: #333;
+}
+
+.animated-underline::after {
+    animation-fill-mode: forwards;
+}
+
+.underline-text {
+    animation: redText 4s linear forwards;
+}
+
+@keyframes underlineAnimation {
+    0% {
+        width: 0%;
+        border-radius: 10px;
+    }
+
+    80% {
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    100% {
+        width: 32%;
+        border-radius: 5px;
+    }
+}
+
+@keyframes redText {
+    0% {
+        color: #333;
+    }
+
+    80% {
+        color: #333;
+    }
+
+    100% {
+        color: #EF4444;
+        /* Change to red (#EF4444) when the underline reaches 80% width */
+    }
+}

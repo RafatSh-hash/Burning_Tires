@@ -235,3 +235,21 @@ a:hover {
         /* Change to red (#EF4444) when the underline reaches 80% width */
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ff0000;
+    /* Red */
+}
+
+/* Style the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Style the scrollbar corner (optional) */
+::-webkit-scrollbar-corner {
+    background-color: #ff0000;
+    /* Red */
+}
